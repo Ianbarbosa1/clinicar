@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clinicar Oficina Mecânica — serviços de manutenção automotiva, diagnóstico e cuidados para o seu veículo, com qualidade e atendimento especializado.">
+    <meta name="Ianb." content="Versão 1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assents/css/estilos.css">
+    <link rel="stylesheet" href="/assents/css/responsivo.css">
+    <!-- fontes exportadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Clinicar Serviço Automotivo</title>
+</head>
+
+<body class="d-flex flex-column">
+    <article class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body d-flex justify-content-center align-items-center flex-column gap-2">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3 w-100">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link-sm">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servico" class="nav-link-sm">SERVIÇOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link-sm">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link-sm">CONTATO</a>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/5521972172552" class="btn-loja-sm d-flex justify-content-center align-items-center rounded-3 gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg>
+                    AGENDAR ATENDIMENTO
+                </a>
+              </div>
+            </div>
+          </div>
+    </article>
+
+    <header class="container-fluid" id="home">
+        <nav class="menu container navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assents/imagens/logo_clinicar_retangulo.png" alt="logo_clinicar" class="logo navbar-brand">
+                </a>
+
+                <button class="btn-menu-sm d-flex d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servico" class="nav-link">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#fale-conosco" class="nav-link">CONTATO</a>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/5521972172552" class="btn-btn-outline-secondary btn-loja rounded-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg>
+                        AGENDAR ATENDIMENTO
+                    </a>
+                </div>
+            </div>
+          </nav>
+
+        <section class="entrada d-flex flex-column gap-3 justify-content-center">
+            <div class="container titulo d-flex flex-column h-100 mt-5 gap-2">
+                <h1 class="mb-0">SERVIÇO AUTOMOTIVO</h1>
+                <h1><span>DE CONFIANÇA PARA O SEU CARRO.</span></h1>
+
+                <p class="fs-4 fs-sm-6 fw-light col-12 col-lg-8">Manutenção preventiva e corretiva, diagnóstico e serviços automotivos com equipamentos modernos.</p>
+
+                <div class="col-6 col-lg-3">
+                    <a href="https://www.google.com/maps/place/Clini'Car+Servi%C3%A7os+Automotivos/@-22.7564455,-42.8551762,1090m/data=!3m2!1e3!4b1!4m6!3m5!1s0x99c1c719af010d:0x337a92ec80b852f6!8m2!3d-22.7564505!4d-42.8526013!16s%2Fg%2F11nt_r5ctx?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" class="y rounded-3 d-flex align-content-center justify-content-center gap-1 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-map-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+                            <path d="M9 4v13" />
+                            <path d="M15 7v5.5" />
+                            <path
+                                d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879" />
+                            <path d="M19 18v.01" />
+                        </svg>
+                        COMO CHEGAR
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <main class="container d-flex flex-column gap-5">
+        <section class="servicos d-flex justify-content-center flex-column align-items-center" id="servico">
+            <h1 class="text-center">PRINCIPAIS SERVIÇOS</h1>
+            <nav class="borda rounded-3"></nav>
+
+            <section class="mt-1 row row-cols-1 row-cols-md-3 g-4">
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-settings-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694" />
+                            <path d="M15 19l2 2l4 -4" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Manutenção Preventiva</h5>
+                            <p class="card-text">Revisões, check-ups e manutenção periódica para evitar problemas e
+                                manter o veículo em boas condições.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-disc">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M7 12a5 5 0 0 1 5 -5" />
+                            <path d="M12 17a5 5 0 0 0 5 -5" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Freios</h5>
+                            <p class="card-text">Inspeção e manutenção de pastilhas, discos, fluido e demais
+                                componentes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-car-suspension">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 22a3 3 0 1 1 0 -6a3 3 0 0 1 0 6" />
+                            <path d="M12 16v-12" />
+                            <path d="M13 2h-2v2h2v-2" />
+                            <path d="M9 11l6 -1" />
+                            <path d="M9 14l6 -1" />
+                            <path d="M9 8l6 -1" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Suspensão e Direção</h5>
+                            <p class="card-text">Avaliação e manutenção dos componentes responsáveis pela estabilidade e
+                                dirigibilidade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-report-analytics">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                            <path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" />
+                            <path d="M9 17v-5" />
+                            <path d="M12 17v-1" />
+                            <path d="M15 17v-3" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Diagnóstico Automotivo</h5>
+                            <p class="card-text">Identificação de falhas utilizando equipamentos de diagnóstico.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-drop-circle">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M10.07 15.34c1.115 .88 2.74 .88 3.855 0c1.115 -.88 1.398 -2.388 .671 -3.575l-2.596 -3.765l-2.602 3.765c-.726 1.187 -.443 2.694 .672 3.575" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Troca de óleo e Filtros</h5>
+                            <p class="card-text">Substituição de óleo e filtros conforme as necessidades do veículo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <div class="card h-100 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="#F5C000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-car-fan">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 12v-9l4.912 1.914a1.7 1.7 0 0 1 .428 2.925l-5.34 4.161" />
+                            <path d="M12 12h9l-1.914 4.912a1.7 1.7 0 0 1 -2.925 .428l-4.161 -5.34" />
+                            <path d="M12 12h-9l1.914 -4.912a1.7 1.7 0 0 1 2.925 -.428l4.161 5.34" />
+                            <path d="M12 12v9l-4.912 -1.914a1.7 1.7 0 0 1 -.428 -2.925l5.34 -4.161" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Arrefecimento</h5>
+                            <p class="card-text">Verificação e manutenção do sistema responsável pelo controle da
+                                temperatura do motor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <hr>
+
+        <section class="sobre container" id="sobre">
+            <div class="row gap-4 d-flex justify-content-center align-items-center">
+                <h1 class="text-center">SOBRE NÓS</h1>
+
+                <div class="col-lg-6 d-flex flex-column">
+                    <p class="fs-5 fw-medium text-center text-lg-start">A Clini'Car Serviço Automotivo nasceu com o propósito de oferecer mais do
+                        que serviços mecânicos: buscamos proporcionar qualidade, segurança, transparência e um
+                        atendimento em que nossos clientes possam confiar.</p>
+
+                    <p class="fs-5 fw-medium text-center text-lg-start">Localizada em Itaboraí – RJ, contamos com uma estrutura moderna e um
+                        espaço preparado para atender nossos clientes com conforto e comodidade. Enquanto cuidamos do
+                        seu veículo, você pode contar com uma sala de espera climatizada e um ambiente pensado para
+                        tornar sua experiência ainda melhor.</p>
+
+                    <p class="fs-5 fw-medium text-center text-lg-start">Nossa equipe trabalha diariamente para oferecer serviços de qualidade,
+                        atendimento especializado e preços justos, sempre buscando entender as necessidades de cada
+                        veículo e de cada cliente.</p>
+
+                    <h3 class="text-center text-lg-start"> Seu carro, nossa missão. 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                            viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-tool">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+                        </svg>
+                    </h3>
+                </div>
+
+                <div class="d-none d-lg-block col-lg-5">
+                    <img src="./assents/imagens/clinicar.png" alt="logo_clinicar" class="img-fluid box-shadow">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="depoimentos container d-flex flex-column gap-3">
+            <div class="w-100 d-flex justify-content-center flex-column align-items-center">
+                <h1 class="text-center">O QUE DIZEM SOBRE NÓS</h1>
+                <nav class="borda rounded-3"></nav>
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3" class=""></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4" class=""></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100">
+                        <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center p-1 rounded-2">
+                            <div class="d-flex align-items-center flex-column gap-1">
+                                <img src="./assents/imagens/carlos.png" alt="carlos" class="d-none d-md-block">
+                                <h5 class="mb-0 ">Carlos José</h5>
+                                <div class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#F5C000" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-star">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" />
+                                    </svg>
+
+                                    <small>-</small>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pentagon-number-5">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0" />
+                                        <path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="fw-light">Levei meu carro para fazer manutenção preventiva, o diagnóstico foi imediato, sem enrolação. Fiz a manutenção de suspensão completa com preço justo. Serviço de primeiro e funcionários atenciosos.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-100">
+                        <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center p-1 rounded-2">
+                            <div class="d-flex align-items-center flex-column gap-1"> <img src="./assents/imagens/carla.png" alt="carla" class="d-none d-md-block">
+                                
+                                <h5 class="mb-0 ">Carla Tores</h5>
+                                <div class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="#F5C000" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-star">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" />
+                                </svg>
+
+                                <small>-</small>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pentagon-number-5">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0" />
+                                    <path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />
+                                </svg>
+                                </div>
+                            </div>
+
+                            <p class="fw-light">Equipe com pessoas educada e com presteza, sala de espera climatizada, conseguiu resolver o problema do meu carro, serviço rápido e atendimento Nota 10.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item  w-100">
+                        <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center p-1 rounded-2">
+                            <div class="d-flex align-items-center flex-column gap-1">
+                                <img src="./assents/imagens/leonis.png" alt="leonis" class="d-none d-md-block">
+
+                                <h5 class="mb-0 ">Leonis Silva</h5>
+                                <div class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#F5C000" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-star">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" />
+                                    </svg>
+
+                                    <small>-</small>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pentagon-number-5">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0" />
+                                        <path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="fw-light">Auto Center com serviço de primeira qualidade, espaço amplo, sala de espera climatizada e o Atendimento nota 10, pessoas educadas e solicitas.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item  w-100">
+                        <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center p-1 rounded-2">
+                            <div class="d-flex align-items-center flex-column gap-1">
+                                <img src="./assents/imagens/guilherme.png" alt="guilherme" class="d-none d-md-block">
+                                <h5 class="mb-0 ">Guilherme Oliveira</h5>
+                                <div class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="#F5C000" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-star">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" />
+                                    </svg>
+
+                                    <small>-</small>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pentagon-number-5">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0" />
+                                        <path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="fw-light">Empresa possui um atendimento de excelência, sala de espera climatizada pra aguardar o carro ficar pronto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Anterior</font>
+                        </font>
+                    </span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Próximo</font>
+                        </font>
+                    </span>
+                </button>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="fale-conosco container" id="fale-conosco">
+            <h1 class="text-center">VAMOS CONVERSAR</h1>
+            <p class="subtitulo lead text-center">Nos envie uma mensagem personalizada.</p>
+
+            <div class="row d-flex gap-5 flex-column-reverse flex-lg-row">
+                <div class="col ratio ratio-1x1 p-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4747.5619419800605!2d-42.855176223653416!3d-22.75644553251723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99c1c719af010d%3A0x337a92ec80b852f6!2sClini'Car%20Servi%C3%A7os%20Automotivos!5e1!3m2!1spt-BR!2sbr!4v1788615542399!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="rounded-2"></iframe>
+                </div>
+
+                <form action="" class="formulario col col-lg-6 rounded-2 p-5 d-flex flex-column justify-content-center gap-3">
+                    <div class="d-flex justify-content-center align-item-center">
+                        <img src="./assents/imagens/logo_clinicar_retangulo.png" alt="logo_clinicar" class="logo navbar-brand mb-3">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">Nome</span>
+                        <input type="text" class="nome form-control" placeholder="Maria Beatriz" id="nome" required>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">Marca e Modelo</span>
+                        <input type="text" class="nome form-control" placeholder="Volkswagen Gol 1.0" id="veiculo">
+                    </div>
+
+                    <select class="form-select" id="solicitacao">
+                        <option selected value="x" >Como podemos ajudar?</option>
+                        <option value="fazer um orcamento">Solicitar orçamento</option>
+                        <option value="agendar um servico">Agendar serviço</option>
+                        <option value="tirar uma dúvida">Tirar uma dúvida</option>
+                        <option value="avaliar um problema no ">Avaliar um problema no veiculo</option>
+                        <option value="outros">Outro</option>
+                    </select>
+                    
+                    <select class="form-select" id="produto">
+                        <option selected value="x">Escolha um serviço</option>
+                        <option value="Manutenção Preventiva">Manutenção Preventiva</option>
+                        <option value="Freios">Freios</option>
+                        <option value="Suspensão">Suspensão</option>
+                        <option value="Direção">Direção</option>
+                        <option value="diagnóstico automotivo">Diagnóstico automotivo</option>
+                        <option value="troca de óleo">Troca de óleo</option>
+                        <option value="troca de filtros">Troca de Filtros</option>
+                        <option value="alinhamento">Alinhamento</option>
+                        <option value="balanceamento">Balanceamento</option>
+                        <option value="cambagem">Cambagem</option>
+                    </select>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="textarea"></textarea>
+                        <label for="textarea">Mensagem Personalizada</label>
+                    </div>
+
+                    <input class="enviar btn" value="Enviar" onclick="enviarMensagem()">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid d-flex justify-content-center align-itens-center flex-column pt-4 pb-4 gap-4">
+        <section class="container-fluid d-flex justify-content-between flex-column flex-lg-row">
+            <div class="d-flex align-items-center flex-column gap-0 text-center mb-3 mt-lg-0">
+                <img src="./assents/imagens/logo_clinicar_retangulo.png" alt="logo_clinicar" class="logo navbar-brand">
+                <small class="mb-0">Av. Antônio Gomes, 1382 - Ampliação, 24808-460</small>
+                <small class="mb-0">Itaboraí, RJ- BRASIL</small>
+                <small class="mb-0">© Todos os direitos Reservados</small>
+            </div>
+
+            <div class="ft d-flex justify-content-center align-items-center flex-column gap-1 text-center  mb-3 mt-3 mb-lg-0 mt-lg-0">
+                <h6 class="fw-bold">REDE SOCIAL</h6>
+                <a href="https://www.instagram.com/clinicar_servico_automotivo_/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+
+                    <small>Instagram</small>
+                </a>
+            </div>
+
+            <div class="ft d-none d-md-flex justify-content-center align-items-center flex-column gap-1 text-center mb-3 mt-3 mb-lg-0 mt-lg-0">
+                <h6 class="fw-bold">PÁGINAS</h6>
+                <a href="#home"><small>HOME</small></a>
+                <a href="#servico"><small>SERVIÇOS</small></a>
+                <a href="#sobre"><small>SOBRE NÓS</small></a>
+                <a href="#fale-conosco"><small>FALE CONOSCO</small></a>
+            </div>
+
+            <div class="ft d-flex justify-content-center align-items-center flex-column gap-1 text-center mb-3 mt-3 mb-lg-0 mt-lg-0">
+                <h6 class="fw-bold">CONTATO</h6>
+                <a href="https://wa.me/5521972172552">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+
+                    <small>(21) 97217-2552</small>
+                </a>
+
+                <a href="mailto:clinicarservicoautomotivo@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                    <small>clinicarservicoautomotivo@gmail.com</small>
+                </a>
+            </div>
+        </section>
+
+        <small class="hll text-center">Desenvolvido por Ian Barbosa</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assents/js/script.js"></script>
+</body>
+
+</html>

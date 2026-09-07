@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    transition: all 0.8s ease;
+    color: #f5f5f5;
+}
+
+a {
+    text-decoration: initial;
+}
+
+body {
+    background-color: #101010;
+}
+
+header {
+    height: 100vh;
+    background-color: #101010;
+    color: #f5f5f5;
+    background-image: url(../imagens/back-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 80px;
+    width: 200px;
+}
+
+.nav-link, .nav-link-sm{
+    color: #f5f5f5;
+    font-weight: 500;
+    border-bottom: 1.5px solid transparent;
+    padding: 25px 0px;
+
+    &:hover {
+        color: #f5f5f5;
+        border-bottom: 1.5px solid #F5C000;
+    }
+}
+.nav-link-sm{
+    padding: 0px 20px;
+    color: #101010;
+
+    &:hover {
+        color: #101010;
+        border-bottom: 1.5px solid #F5C000;
+    }
+}
+
+.btn-loja, .btn-loja-sm {
+    border: 1px solid #F5C000;
+    padding: 10px 14px;
+    color: #F5C000;
+
+    &:hover {
+        color: #f5f5f5;
+        border: 1px solid #f5f5f5;
+    }
+}
+.btn-loja-sm{
+    background-color: #F5C000;
+    padding: 10px 14px;
+    color: #f5f5f5;
+
+    &:hover {
+        background-color: transparent;
+        color: #F5C000;
+        border: 1px solid #F5C000;
+    }
+}
+.btn-menu-sm{
+    background-color: transparent;
+    border: none;
+}
+.modal-content{
+    width: 350px;
+    & h1{
+        color: #F5C000;
+    }
+}
+.modal-dialog{
+    width: 350px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.entrada {
+    height: 70%;
+}
+
+.titulo {
+    position: relative;
+    top: 150px;
+    & h1 {
+        color: #f5f5f5;
+        font-size: 50px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 2px;
+    }
+    & span {
+        color: #F5C000;
+        font-family: "Oswald", sans-serif;
+    }
+}
+.y {
+    background-color: transparent;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+
+    &:hover {
+        color: #F5C000;
+    }
+}
+
+main {
+    background-color: #101010;
+    padding: 20px 0px;
+}
+
+.servicos, .sobre, .depoimentos, .fale-conosco{
+    & h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 35px;
+        color: #f5f5f5;
+        letter-spacing: 2px;
+    }
+    & .borda{
+        background-size: 300% 100%;
+        background-image: linear-gradient(to right, #F5C000, #F5C000, #F5C000, #f5f5f5, #F5C000, #F5C000, #F5C000);
+        height: 4px;
+        width: 150px;
+        animation: degrade 5s infinite linear;
+    }
+    & .card{
+        backdrop-filter: blur(5px);
+        background-color: transparent;
+        color: #f5f5f5;
+        border: 1px solid #F5C000;
+        padding: 5px;
+        box-shadow: 0px 0px 5px #F5C000;
+        &:hover{
+            box-shadow: 0px 0px 10px #F5C000;
+        }
+    }
+}
+
+hr{
+    border-color: #E8E8E8;
+}
+
+.sobre{
+    color: #f5f5f5;
+
+    & h3{
+        border-bottom: 1.5px solid #F5C000;
+    }
+}
+
+/*Depoimentos*/
+.carousel-inner{
+    min-height: 300px;
+}
+.carousel-item{
+    min-height: 290px;
+}
+.carousel-caption{
+    top: 2px;
+    color: #f5f5f5;
+    border: 1px solid #F5C000;
+    & img{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*fale conosco*/
+.subtitulo{
+    color: #f5f5f5;
+}
+.formulario{
+    border: 1px solid #E8E8E8;
+
+    span{
+        color: #101010;
+    }
+    .nome, textarea, select{
+        color: #101010;
+        background-color: #f5f5f5;
+    }
+    option{
+        color: #101010;
+    }
+}
+.img-formulario{
+    width: 300px;
+    height: 100px;
+}
+.input-group:hover {
+    span{
+
+        color: #F5C000;
+    }
+    
+}
+.form-select:focus, .form-control:focus, .form-floating:focus {
+    color: #101010;
+    outline: 0;
+    box-shadow: none;
+    border-color: #E8E8E8;
+}
+.enviar{
+    background-color: #F5C000;
+    color: #f5f5f5;
+    border: 1px solid #F5C000;
+
+    &:hover{
+        color: #f5f5f5;
+        background-color: transparent;
+        border: 1px solid #f5f5f5;
+    }
+}
+
+.ft{
+    small:hover{
+        color: #F5C000;
+    }
+}
+
+.hll{
+    color: #00aeff;
+}
+
+/*ANIMAÇÃO*/
+@keyframes degrade{
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
