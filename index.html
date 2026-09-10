@@ -18,42 +18,6 @@
 </head>
 
 <body class="d-flex flex-column">
-    <article class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog pt-3">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-              <div class="modal-body d-flex justify-content-center align-items-center flex-column gap-2">
-                    <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3 w-100">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link-sm">INÍCIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#servico" class="nav-link-sm">SERVIÇOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#sobre" class="nav-link-sm">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#fale-conosco" class="nav-link-sm">CONTATO</a>
-                        </li>
-                    </ul>
-
-                    <a href="https://wa.me/5521972172552" class="btn-loja-sm d-flex justify-content-center align-items-center rounded-3 gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                        </svg>
-                        AGENDAR ATENDIMENTO
-                    </a>
-              </div>
-            </div>
-          </div>
-    </article>
-
     <article class="aviso justify-content-center align-items-center w-100 z-2">
         <div class="alert alert-warning alert-dismissible text-center p-3" role="alert" id="aviso">
         </div>
@@ -65,10 +29,6 @@
                 <a class="navbar-brand" href="#home">
                     <img src="./assents/imagens/logo_clinicar_retangulo.png" alt="logo_clinicar" class="logo navbar-brand">
                 </a>
-
-                <button class="btn-menu-sm d-flex d-lg-none" data-bs-toggle="modal" data-bs-target="#menuModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F5C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
-                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -86,15 +46,18 @@
                         </li>
                     </ul>
 
-                    <a href="https://wa.me/5521972172552" class="btn-btn-outline-secondary btn-loja rounded-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="#F5C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                        </svg>
-                        AGENDAR ATENDIMENTO
-                    </a>
                 </div>
+
+                <a href="https://wa.me/5521972172552" class="d-flex justify-content-center align-items-center gap-1 btn-btn-outline-secondary btn-loja rounded-3" title="Agendar Atendimento">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="#F5C000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg>
+                    <p class="m-0">
+                        AGENDAR ATENDIMENTO
+                    </p>
+                </a>
             </div>
         </nav>
 
@@ -399,19 +362,19 @@
                     
                     <select class="form-select" id="produto">
                         <option selected value="x">Escolha um serviço</option>
-                        <option value="Manutenção Preventiva">Amortecedores</option>
+                        <option value="Amortecedores">Amortecedores</option>
                         <option value="Freios">Freios</option>
                         <option value="Suspensão">Suspensão</option>
                         <option value="Direção">Direção</option>
-                        <option value="diagnóstico automotivo">Diagnóstico automotivo</option>
-                        <option value="troca de óleo">Troca de óleo</option>
-                        <option value="troca de filtros">Troca de Filtros</option>
-                        <option value="alinhamento">Alinhamento</option>
-                        <option value="balanceamento">Balanceamento</option>
-                        <option value="cambagem">Cambagem</option>
-                        <option value="elétrica">Elétrica</option>
-                        <option value="instalação de multimídias ">Instalação de multimídias</option>
-                        <option value="arranque">Arranque</option>
+                        <option value="Diagnóstico automotivo">Diagnóstico automotivo</option>
+                        <option value="Troca de óleo">Troca de óleo</option>
+                        <option value="Troca de filtros">Troca de Filtros</option>
+                        <option value="Alinhamento">Alinhamento</option>
+                        <option value="Balanceamento">Balanceamento</option>
+                        <option value="Cambagem">Cambagem</option>
+                        <option value="Elétrica">Elétrica</option>
+                        <option value="Instalação de multimídias ">Instalação de multimídias</option>
+                        <option value="Arranque">Arranque</option>
                     </select>
 
                     <div class="form-floating">
@@ -473,7 +436,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assents/js/script.js"></script>
+    <script src="./assents/js/script.js"></script>
 </body>
 
 </html>

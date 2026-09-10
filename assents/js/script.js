@@ -48,7 +48,7 @@ function enviarMensagem(){
 
     switch (solicitacao) {
         case 'fazer um orcamento':
-            frase = `${time}, gostaria de ${solicitacao} para o serviço de ${servico} no ${veiculo}`;
+            frase = `${time}, gostaria de ${solicitacao} para o serviço de ${servico} no ${veiculo}.`;
         break;
 
         case 'agendar um servico':
@@ -72,8 +72,8 @@ function enviarMensagem(){
         break;
     }
 
-    let url = 'http://wa.me/' + numero + '?text='
-        + '*CLINICAR SERVICOS AUTOMOTIVOS*' + '%0a'
+    let url = 'http://wa.me/55' + numero + '?text='
+        + "*CLINI'CAR SERVICOS AUTOMOTIVOS*" + '%0a'
         + '%0a'
         + '*Cliente*: '+ nome + '%0a'
         + frase + '%0a'

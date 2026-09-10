@@ -1,4 +1,9 @@
 @media (max-width: 576px) { 
+    .btn-loja{
+        & p{
+            display: none;
+        }
+    }
     .titulo {
         top: 75px;
         & h1 {

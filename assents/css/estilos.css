@@ -37,7 +37,7 @@ header {
     height: 80px;
     width: 200px;
 }
-.nav-link, .nav-link-sm{
+.nav-link{
     color: #f5f5f5;
     font-weight: 500;
     border-bottom: 1.5px solid transparent;
@@ -48,55 +48,19 @@ header {
         border-bottom: 1.5px solid #F5C000;
     }
 }
-.nav-link-sm{
-    padding: 0px 20px;
-    color: #f5f5f5;
-
-    &:hover {
-        color: #F5C000;
-    }
-}
-.btn-loja, .btn-loja-sm {
+.btn-loja{
     border: 1px solid #F5C000;
     padding: 10px 14px;
-    color: #F5C000;
-
+    
     &:hover {
-        color: #f5f5f5;
         border: 1px solid #f5f5f5;
     }
-}
-.btn-loja-sm{
-    background-color: #F5C000;
-    padding: 10px 14px;
-    color: #101010;
-
-    &:hover {
-        background-color: transparent;
+    & p{
         color: #F5C000;
     }
 }
-.btn-menu-sm{
-    background-color: transparent;
-    border: none;
-}
-/*MENU SUSPENSO PARA DISPOSITIVOS MENORES*/
-.modal-dialog{
-    width: 350px;
-    margin: auto;
-}
-.modal-content{
-    width: 350px;
-    background-color: #10101067;
-    backdrop-filter: blur(2px);
-    border: 1px solid #E8E8E8;
-    & h1{
-        color: #f5f5f5;
-    }
-    & .btn-close{
-        background-color: #f5f5f5;
-        opacity: 1;
-    }
+.btn-loja:hover p{
+    color: #f5f5f5;
 }
 
 /*ENTRADA DO SITE*/
