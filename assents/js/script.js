@@ -29,9 +29,8 @@ function enviarMensagem(){
 
     let frase = "";
     let time = ""
-    let numero = "21998382523";
+    let numero = "21972172552";
 
-    //21972172552
     let horario = new Date().getHours();
     function hora() {
         if (horario >= 0 && horario <= 13) {
