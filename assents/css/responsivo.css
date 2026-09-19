@@ -1,9 +1,11 @@
 @media (max-width: 576px) { 
+    /*MENU*/
     .btn-loja{
         & p{
             display: none;
         }
     }
+    /*ENTRADA*/
     .titulo {
         top: 75px;
         & h1 {
@@ -15,6 +17,7 @@
         width: 175px;
     }
 
+    /*MAIN*/
     .servicos, .sobre, .depoimentos, .fale-conosco{
         & h1 {
             font-family: "Oswald", sans-serif;
@@ -23,10 +26,19 @@
             letter-spacing: 2px;
         }
     }
+
+    /*DEPOIMENTOS*/
+    .carousel-inner{
+        min-height: 320px;
+    }
+    .carousel-item{
+        min-height: 310px;
+    }
+
 }
 
-
-@media screen and (min-width: 576px) and (max-width: 1400px) { 
+@media screen and (min-width: 576px) and (max-width: 1400px) {
+    /*ENTRADA*/ 
     .titulo {
         top: 75px;
     }

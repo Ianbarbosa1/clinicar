@@ -1,3 +1,19 @@
+function alerta(texto){
+    let container = document.querySelector('.aviso');
+    let painel = document.querySelector('#aviso');
+    container.style.display = 'flex';
+    painel.style.opacity = '1';
+    painel.style.zIndex = '+99';
+    painel.innerHTML = texto;
+    painel.style.transform = 'translateY(0px)';
+
+    setTimeout(() => {
+        painel.style.zIndex = '-99';
+        painel.style.opacity = '0';
+        painel.style.transform = 'translateY(50px)';
+    }, 6000);
+}
+
 function enviarMensagem(){
     let nome = document.querySelector('#nome').value;
     let veiculo = document.querySelector('#veiculo').value;
@@ -30,8 +46,8 @@ function enviarMensagem(){
     let frase = "";
     let time = ""
     let numero = "21972172552";
-
     let horario = new Date().getHours();
+
     function hora() {
         if (horario >= 0 && horario <= 13) {
           time = "Bom+dia";
@@ -78,21 +94,4 @@ function enviarMensagem(){
         + frase + '%0a'
         + texto + '%0a'
         window.open(url, '_blank').focus()
-}
-
-
-function alerta(texto){
-    let container = document.querySelector('.aviso');
-    let painel = document.querySelector('#aviso');
-    container.style.display = 'flex';
-    painel.style.opacity = '1';
-    painel.style.zIndex = '+99';
-    painel.innerHTML = texto;
-    painel.style.transform = 'translateY(0px)';
-
-    setTimeout(() => {
-        painel.style.zIndex = '-99';
-        painel.style.opacity = '0';
-        painel.style.transform = 'translateY(50px)';
-    }, 6000);
 }
